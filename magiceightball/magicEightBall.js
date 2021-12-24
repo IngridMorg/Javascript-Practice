@@ -34,6 +34,9 @@ switch(randomNumber){
     case 8:
         eightBall = 'Signs point to yes';
         break;
+    default:
+        eightBall = 'Cannot predict now';
+        break;
 }
 
 console.log(eightBall);
