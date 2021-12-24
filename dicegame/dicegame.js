@@ -8,16 +8,20 @@
 //if we want to get a random value within a range we
 //need to create our own function.
 function randomInt(min, max){
-    min = Math.ceil();
-    max = Math.ceil();
+    //removed a section here from the original code as it caused NaN
+    //original code:
+    /*
+    min = Math.ceil(min);
+    max = Math.floor(max);
+     */
     return Math.floor(Math.random() * (max - min)+min);
     //code from:
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 }
 
-let dice1 = Math.randomInt(0,6);
+let dice1 = randomInt(0,6);
 
-let dice2 = Math.randomInt(0,6);
+let dice2 = randomInt(0,6);
 
 if(dice1 > dice2){
     console.log('dice 1 is the winner!\n');
